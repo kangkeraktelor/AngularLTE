@@ -1,16 +1,26 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, Title } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { AppheaderComponent } from './component/appheader/appheader.component';
+import { AppmenuComponent } from './component/appmenu/appmenu.component';
+import { AppfooterComponent } from './component/appfooter/appfooter.component';
+import { AppsettingComponent } from './component/appsetting/appsetting.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AppheaderComponent,
+    AppmenuComponent,
+    AppfooterComponent,
+    AppsettingComponent
   ],
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [
+    Title
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
